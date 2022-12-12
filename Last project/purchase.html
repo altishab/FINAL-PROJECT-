@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="main-navbar">
+        <div id="brand">
+            <a href="./">
+                <img src="./images/keyboard.png" alt="Keyboard Logo" />
+            </a>
+        </div>
+
+
+
+       
+        <script>
+            // JavaScript function to display the price of the selected keyboard
+            function showPrice(keyboard) {
+              if (keyboard === 'K1') {
+                document.getElementById('price').innerHTML = 'Price: $50';
+              } else if (keyboard === 'K2') {
+                document.getElementById('price').innerHTML = 'Price: $75';
+              } else if (keyboard === 'K3') {
+                document.getElementById('price').innerHTML = 'Price: $100';
+              }
+            }
+        
+            // JavaScript function to display a "Thank you for purchasing" message
+            function confirmPurchase() {
+              alert('Thank you for purchasing!');
+            }
+          </script>
+      <style>
+        #centered-content5 {
+          text-align: center;
+          width: 100%;
+          height: 0%;
+        
+        }
+      </style>
+      
+      <body>
+        <div id="centered-content5">
+          <h5>Keyboards</h5>
+          <p>Choose a keyboard to add to your cart:</p>
+      
+          <form>
+            <input type="radio" name="keyboard" value="K1" onclick="showPrice(this.value)"> HyperX Alloys Origins<br>
+            <input type="radio" name="keyboard" value="K2" onclick="showPrice(this.value)"> Corsair K70<br>
+            <input type="radio" name="keyboard" value="K3" onclick="showPrice(this.value)"> Vortexgear Pok3r<br>
+          </form>
+      
+          <p id="price"></p>
+      
+          <button onclick="confirmPurchase()">Confirm</button>
+        </div>
+      </body>
+      
+      
+      
+      
+        </html>
